@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: bush qin
 
 # Username (this should match the folder name)
 authors:
@@ -14,14 +14,14 @@ role: Professor of Artificial Intelligence
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: shenyang medical college
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include general surgery, ecnomics.
 
 interests:
-- Artificial Intelligence
+- general surgery
 - Computational Linguistics
 - Information Retrieval
 
