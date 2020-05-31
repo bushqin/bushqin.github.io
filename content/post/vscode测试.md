@@ -1,3 +1,30 @@
+
+
+
+
+---
+title: markdown语言学习测试
+summary: test on computer 
+date: "2020-05-31T00:00:00Z"
+subtitle: 测试 副标题
+feature: true
+categories: ["Computer"]
+publishDate: 2020-05-31
+draft: false
+
+# View.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+view: 2
+
+# Optional header image (relative to `static/img/` folder).
+header:
+  caption: ""
+  image: ""
+
+
+
 # markdown语言学习测试
 ## markdown 
 ### medsy
