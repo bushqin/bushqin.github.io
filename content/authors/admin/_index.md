@@ -20,22 +20,21 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include general surgery, ecnomics.
 
-interests:
+兴趣:
 - general surgery
 - Computational Linguistics
-- Information Retrieval
+- 计算机应用相关
 
-education:
+教育背景:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: 中国医科大学外科学硕士
+    institution: China medical university 
+    year: 2003
+  - course: 中国医科大学临床医疗系
+    institution: china medical university
+    year: 2000
+  
+
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,16 +43,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: '#contact'  # For a direct email link, use "mailto:qyqyqy@gmail.com".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.co.uk
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/bushqin
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -70,6 +69,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+大学毕业走向工作多年，见证了各个领域及学科的发展速度，随之而来的带来了学习的紧迫感，想通过学习以及分享学习的过程，对自己的心情，以及经过有一个记录
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+2003年研究生毕业后一直在普通外科工作，主要从事肝胆，疝气，胃肠的微创治疗的工作，对计算机的应用有着一定的兴趣。
