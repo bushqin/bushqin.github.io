@@ -1,6 +1,6 @@
 ---
 # Display name
-title: bush qin
+title: medsy
 
 # Username (this should match the folder name)
 authors:
