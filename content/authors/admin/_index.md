@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+# role: Professor of Artificial Intelligence
 
 # Organizations/Affiliations
 organizations:
@@ -20,7 +20,7 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include general surgery, ecnomics.
 
-兴趣:
+interest:
 - general surgery
 - Computational Linguistics
 - 计算机应用相关

@@ -3,10 +3,10 @@
 widget = "tag_cloud"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 120  # Order that this section will appear.
+weight = 80  # Order that this section will appear.
 
-title = "流行题目"
-subtitle = ""
+title = "常用标签"
+subtitle = "tags"
 
 [content]
   # Choose the taxonomy from `config.toml` to display (e.g. tags, categories)
