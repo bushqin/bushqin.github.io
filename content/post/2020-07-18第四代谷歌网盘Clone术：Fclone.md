@@ -1,23 +1,15 @@
+---
 title: 第四代谷歌网盘Clone术：Fclone
-
-summary: gdrive转存技术从最初的rclone转存到目前到fclone进化了4代，本文简单介绍mark，备忘
-
+summary: drive转存技术从最初的rclone转存到目前到fclone进化了4代，本文简单介绍mark，备忘
+authors: [转自BlueSkyXN]
 date: "2020-07-18T00:00:00Z"
 subtitle: 
 feature: true
 categories: ["gdrive"]
 publishDate: 2020-07-18
 draft: false
+---
 
-View.
-
-1 = List
-
-2 = Compact
-
-3 = Card
-
-view: 2
 
 # 第四代谷歌网盘Clone术：Fclone
 
