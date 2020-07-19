@@ -1,18 +1,29 @@
+title: 第四代谷歌网盘Clone术：Fclone
+
+summary: gdrive转存技术从最初的rclone转存到目前到fclone进化了4代，本文简单介绍mark，备忘
+
+date: "2020-07-18T00:00:00Z"
+subtitle: 
+feature: true
+categories: ["gdrive"]
+publishDate: 2020-07-18
+draft: false
+
+View.
+
+1 = List
+
+2 = Compact
+
+3 = Card
+
+view: 2
+
 # 第四代谷歌网盘Clone术：Fclone
 
 ## 简介
 
-商业转载请联系作者获得授权，非商业转载请注明出处。
 
- For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source.
-
-协议(License)：署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
-
-#作者(Author)：BlueSkyXN
-
-链接(URL)：https://www.bluesky.cf/202007/1419.html
-
-#来源(Source)：苍穹の下
 
 Fclone是目前最新最强的Rclone衍生产品
 与rclone和gclone兼容
@@ -34,7 +45,9 @@ Fclone是目前最新最强的Rclone衍生产品
 官方教程：https://rclone.org/install/
 Linux一键脚本
 
-```curl https://rclone.org/install.sh | sudo bash```
+```bash
+curl https://rclone.org/install.sh | sudo bash
+```
 
 
 
@@ -42,9 +55,7 @@ Linux一键脚本
 
 项目地址：
 
-
-
-```https://github.com/xyou365/AutoRclone```
+```bash
 https://github.com/xyou365/AutoRclone
 ```
 
