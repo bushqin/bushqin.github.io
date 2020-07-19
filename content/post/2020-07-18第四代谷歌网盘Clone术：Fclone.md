@@ -65,8 +65,6 @@ https://github.com/xyou365/AutoRclone
 sudo apt-get install screen git && curl https://rclone.org/install.sh | sudo bash
 ```
 
-```
-
 ```bash
 sudo git clone https://github.com/xyou365/AutoRclone && cd AutoRclone && sudo pip3 install -r requirements.txt
 ```
@@ -142,7 +140,7 @@ linux一键脚本：
 
 
 ```bash
-bash &lt;(wget -qO- https://git.io/gclone.sh)
+bash <(wget -qO- https://git.io/gclone.sh)
 ```
 
 ```bash
