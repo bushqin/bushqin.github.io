@@ -87,4 +87,102 @@ hash值匹配，选择其他的选项，选择越多，数据越全，但是削�
 
 ***Preferred Hardware Encoders***
 
-说明你的核显没有正常工作
+说明你的核显没有正常工作。对于核显硬解的实现，我个人参照了科学家大佬的[让 emby 支持硬解和网页播放](https://blog.vwert.com/srv/emby-intel--vaapi-qsv-ffmpeg.html),这篇文章。叙述的比较详细，因为我的操作系统不是Ubuntu，Debian系统略有不同，但是走了下来，发现debian没能实现添加Oibaf PPA，ffmpeg最后编译的不是很完全。
+
+emby的transcode能够工作。部分hevc出现了软解，或者不稳定，被我放弃了，所以改成docker模式，但是，元数据削刮的部分还可以用，弃之可惜，让docker直接使用现成的削刮结果。
+
+### 6，docker emby实现
+
+```bash
+apt install docker-compose
+vi docker.yml
+```
+
+```bash
+version: "2.1"
+services:
+  emby:
+    image: linuxserver/emby
+    container_name: emby
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - UMASK_SET=<022> #optional
+    volumes:
+      - /var/lib/emby:/config
+      - /mnt/EmbyMedia:/mnt/EmbyMedia 
+      - /home:/transcode #optional
+      - /opt/vc/lib:/opt/vc/lib #optional
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+    devices:
+      - /dev/dri:/dev/dri #optional
+    
+    restart: unless-stopped
+```
+
+编辑好dockerfile文件。
+
+```bash
+ sudo chown -R 1000:1000 /var/lib/emby
+```
+
+把元数据目录权限交给docker。
+
+```bash
+docker-compose -f docker.yml up -d
+```
+
+ 创建docker-emby容器，同时，直通显卡。由于docker容器内，各种库构建的全面，省却了，各种库安装调试的烦恼。
+
+访问：http://ip:8096, 测试emby的运行状态，一般这个时候，转码的各个解码器，就可以正常运行了。
+
+### 7，开通https反向代理
+
+```bash
+sudo apt install caddy
+```
+
+编辑caddyfile
+
+```bash
+vi /etc/caddy/Caddyfile
+```
+
+反代8096端口。自动https
+
+```bash
+# The Caddyfile is an easy way to configure your Caddy web server.
+#
+# Unless the file starts with a global options block, the first
+# uncommented line is always the address of your site.
+#
+# To use your own domain name (with automatic HTTPS), first make
+# sure your domain's A/AAAA DNS records are properly pointed to
+# this machine's public IP, then replace the line below with your
+# domain name.
+your.domain
+
+# Set this path to your site's directory.
+#root * /usr/share/caddy
+
+# Enable the static file server.
+file_server
+reverse_proxy 127.0.0.1:8096
+
+# Another common task is to set up a reverse proxy:
+# reverse_proxy localhost:8080
+
+# Or serve a PHP site through php-fpm:
+# php_fastcgi localhost:9000
+
+# Refer to the Caddy docs for more information:
+# https://caddyserver.com/docs/caddyfile
+```
+
+这样，你的https://your.ip就完成了。只要国内有合适的梯子，应该能够流畅观看。
+
+如果你有gia结点的话，直接把caddy反代搭建在gia节点上，域名指向gia结点ip，国内不用梯子，可以直接观看。
+
